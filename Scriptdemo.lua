@@ -30,7 +30,10 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "Blox fruit"})
+     local Tab1o = MakeTab({Name = "Blox fruit"}) 
+     local Tab2o = MakeTab({Name = "Dead rails"})
+
+
      
 ------- BUTTON
     
@@ -53,5 +56,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/r
   Translator = true; -- true/false
 }  
 getgenv().Version = "V1" loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))(Settings)
+end
+})
+AddButton(Tab2o, {
+     Name = "AirFlow",
+    Callback = function()
+	  local Settings = {
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/255ac567ced3dcb9e69aa7e44c423f19.lua"))()))(Settings)
 end
 })
